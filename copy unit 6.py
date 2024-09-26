@@ -1,0 +1,10 @@
+f=open("fest.txt","r+")
+f.seek(10)
+a=(f.read(6))
+f1=open("test.txt","w")
+f1.write(a)
+# TO COUNT NUMBER OF LINES IN  A FILE.
+f1.close()
+f2=open("fest.txt","r+")
+c=(f2.readlines())
+print(len(c))
